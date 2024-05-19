@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cv-container {
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transform: scale(0.9);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cv-container:hover {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.5);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #00aaff;
+}
+
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    color: #00aaff;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+section p, section ul {
+    margin: 10px 0;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    background-color: #eaeaea;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
